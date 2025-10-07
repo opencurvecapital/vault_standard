@@ -65,13 +65,13 @@ const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
-      forking: {
-        url: fork_url,
-        blockNumber: 14003880,
-      },
+      // forking: {
+      //   url: fork_url,
+      //   blockNumber: 14003880,
+      // },
       accounts: {
         count: 5,
-        mnemonic: MNEMONIC,
+        // mnemonic: MNEMONIC,
       },
       chainId: chainIds.hardhat,
       blockGasLimit: 28500000 // this is also eth mainnet current block limit
